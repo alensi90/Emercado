@@ -1,0 +1,38 @@
+#cajacomentarios {
+    width: 60%;
+    height: 90px;
+    outline: none;
+}
+
+#botón {
+    width: 80px;
+    height: 40px;
+    background-color: #212529;
+    color: white;
+    outline: none;
+    font-size: 22px;
+}
+
+.puntuacion {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.puntuacion input {
+    position: absolute;
+    top: -100px;
+}
+
+
+.puntuacion label {
+    float: right;
+    color: #c1b8b8;
+    font-size: 30px;
+}
+
+.puntuacion label:hover,
+.puntuacion label:hover~label,
+.puntuacion input:checked~label {
+    color: orange;
+}
